@@ -1,0 +1,125 @@
+
+body.nav-closed .nav {
+    transform: translate3D(420px, 0, 0);
+    box-shadow: none;
+    opacity: 0;
+}
+
+.nav {
+  transition: all 0.4s ease;
+  z-index: 20;
+  width: 320px;
+  position: fixed;
+  background-color: black;
+  right: 0px;
+  top: 0px;
+  display: block;
+  bottom:0px;
+  opacity: 1;
+  box-shadow: -7px -4px 40px 0px #636363b0;
+  padding-top: 25px;
+}
+
+.nav ul li {
+  color: white;
+}
+
+.nav ul {
+    padding: 0px 15px 15px;
+    list-style: none;
+    counter-reset: item;
+    margin-left: 0px;
+}
+
+.nav ul ul {
+  padding: 0px 0px 0px 15px;
+}
+
+.nav li:before {
+    display: block;
+    float: right;
+    padding-right: 4%;
+    padding-left: 5px;
+    text-align: right;
+    font-size: 12pt;
+    vertical-align: bottom;
+    color: #B8B8B8;
+    /*content: counters(item, '.', lower-roman);*/
+    content: '+';
+    counter-increment: item;
+    margin-top:7px;
+}
+.nav #li1:before {
+  content: 'I';
+}
+
+.nav #li2:before {
+  content: 'II';
+}
+.nav #li21:before {
+  content: 'II.a';
+}
+.nav #li22:before {
+  content: 'II.b';
+}
+.nav #li3:before {
+  content: 'III';
+}
+.nav #li4:before {
+  content: 'IV';
+}
+
+.nav li {
+    margin: 0;
+}
+.nav li a {
+    text-decoration: none;
+    line-height: 1.4;
+    font-size: 12pt;
+    display: block;
+    padding: 0.6rem 4%;
+    overflow: hidden;
+    white-space: nowrap;
+    /*text-overflow: ellipsis;*/
+    letter-spacing: 0.3px;
+}
+.nav li a:after {
+    display: inline-block;
+    content: " .......................................................";
+    color: rgba(255,255,255,0.2);
+    margin-left: 5px;
+}
+
+.nav .nav-current:before {
+    color: #fff;
+}
+.nav .nav-current a:after {
+    content: " ";
+    border-bottom: rgba(255,255,255,0.5) 1px solid;
+    width: 100%;
+    height: 1px;
+}
+
+.nav .nav-non-current a:after {
+    border-bottom: rgba(255,255,255,0.5) 0px solid;
+    display: inline-block;
+    content: " .......................................................";
+    color: rgba(255,255,255,0.2);
+    margin-left: 5px;
+}
+
+.nav a:link,
+.nav a:visited {
+    color: #B8B8B8;
+}
+
+.nav li.nav-current a,
+.nav a:hover,
+.nav a:active,
+.nav a:focus {
+    color: #fff;
+}
+
+.nav li.nav-non-current a {
+    color: #B8B8B8;
+}

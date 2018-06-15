@@ -1,0 +1,111 @@
+.bullet {
+  color: blue;
+}
+
+@media (max-width: 650px) {
+  .bullet {
+    display: none;
+  }
+
+  .my-name {
+
+  }
+}
+
+.my-header {
+  font-size: 26px;
+  font-family: 'Open Sans', sans-serif;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #424242;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 650px) {
+  .my-header {
+    flex-direction: column;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .menu-item {
+    padding: 6px;
+    font-size: 16pt;
+
+  }
+}
+
+.menu-item {
+  align-self: center;
+  margin-right: 0px;
+}
+
+@media (min-width: 650px) {
+  .menu-item {
+    font-size: 12pt;
+  }
+}
+
+.menu-item a:hover {
+    color: #111;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 2px;
+}
+
+
+.menu-button {
+    box-sizing: border-box;
+    height: 44px;
+    padding: 0 15px;
+    border: #bfc8cd 1px solid;
+    opacity: 1;
+    color: #9EABB3;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 41px;
+    border-radius: 6px;
+    background: #fff;
+    transition: all 0.5s ease;
+    z-index: 500;
+    border-color: #ddd;
+    align-self: center;
+}
+
+.menu-button:hover{
+  text-decoration: none;
+}
+
+.menu-button:focus {
+    outline: 0;
+}
+
+.menu-button .burger {
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+body.nav-opened .menu-button {
+    background: #ccc;
+    border-color: #fff;
+    color: #000;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.menu-button:hover {
+    border-color: #bbb;
+    color: #555;
+    background: #fff;
+}
+
+@media (max-width: 650px) {
+  #my-name {
+    align-self: center;
+  }
+}

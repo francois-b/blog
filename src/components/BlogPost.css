@@ -1,0 +1,62 @@
+
+.blog-post h1, h2 {
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+.blog-post p {
+  /*font-family: 'EB Garamond', serif;*/
+  margin-bottom: 10px;
+}
+
+.blog-info {
+  display: flex;
+  flex-direction: row;
+  order: 2;
+}
+
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+
+.blog-post .blog-title {
+  order: 1;
+  font-size: 18pt;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+
+.blog-info .blog-date {
+  order: 1;
+  padding-right: 0px;
+}
+
+.blog-info .blog-intra {
+  content: '–';
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #ccc;
+  order: 2;
+}
+
+.blog-info .blog-location {
+  order: 3;
+}
+
+.blog-post .blog-content {
+  order: 3;
+}
+
+.blog-post .blog-content h1{
+  font-size: 16pt;
+  font-weight: normal;
+}
+
+.blog-post .blog-content h2{
+  font-size: 14pt;
+}

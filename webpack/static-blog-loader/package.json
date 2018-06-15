@@ -1,0 +1,19 @@
+{
+  "bundleDependencies": false,
+  "dependencies": {
+    "cheerio": "0.19.0",
+    "highlight.js": "^9.12.0",
+    "loader-utils": "^0.2.17",
+    "marked": "^0.3.6",
+    "yaml-front-matter": "^3.4.0"
+  },
+  "deprecated": false,
+  "description": "A webpack loader for markdown with yaml front matter",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "static-blog-loader",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.0"
+}
